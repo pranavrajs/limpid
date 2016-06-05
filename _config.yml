@@ -1,8 +1,8 @@
 # Site settings
-title: Lucid Jekyll Theme
+title: Limpid Jekyll Theme
 email: pranav@maangalabs.com
-description: Lucid Jekyll Theme is a clean, minimal theme for Jekyll websites.
-baseurl: "/limpid/" # the subpath of your site, e.g. /blog/
+description: Limpid Jekyll Theme is a clean, minimal theme for Jekyll websites.
+baseurl: /limpid # the subpath of your site, e.g. /blog/
 url: "http://maangalabs.com" # the base hostname & protocol for your site
 #twitter
 twitter_username: pranavrajs

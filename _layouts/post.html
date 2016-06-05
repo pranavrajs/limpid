@@ -5,7 +5,7 @@ layout: default
     <div class="header">
         <h2>{{ page.title }}</h2>
         <p>{{ page.date | date: "%b %-d, %Y" }}</p>
-        <img src="{{page.featured_image}}">
+        <img src="{{page.featured_image  | prepend: site.baseurl}}">
     </div>
     <div class="col-sm-12">
         <div id="google_translate_element"></div>

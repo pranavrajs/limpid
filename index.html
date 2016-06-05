@@ -6,14 +6,14 @@ index: true
     {% for post in site.posts %}
     <div class="post-meta">
         <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-        <img src="{{post.featured_image}}">
+        <img src="{{post.featured_image  | prepend: site.baseurl}} ">
         <div class="post-descr">
             <p>
-                {{ post.date | date: "%b %-d, %Y" }} | {% if site.disqus_short_name and page.comments != false and site.disqus_show_comment_count == true %}<a class="comments" href="{% if page.index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread">Comments</a> {% endif %}
+                {{ post.date | date: "%b %-d, %Y" }} | {% if site.disqus_short_name and page.comments != false and site.disqus_show_comment_count == true %}<a class="comments" href="{% if page.index %}{{ root_url }}{{ post.url | prepend: site.baseurl }}{% endif %}#disqus_thread">Comments</a> {% endif %}
             </p>
             {% if post.content contains '<!-- more -->' %}
             <p>{{ post.content | split:'<!-- more -->' | first }}
-                <a href="{{ post.url }}" class="btn btn-primary">Read More</a>
+                <a href="{{ post.url  | prepend: site.baseurl}}" class="btn btn-primary">Read More</a>
             </p>
         </div>
     </div>

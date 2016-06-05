@@ -1,4 +1,4 @@
-Lucid Jekyll Theme
+Limpid Jekyll Theme
 
 Clone the repo to get started
 
@@ -11,7 +11,7 @@ Included :
  * Author block and profile
  * Download source facility
  * Feature image on posts
- 
+
 # Desktop Preview
 
 ![alt text](images/ss-1.png "Desktop Preview 1")
