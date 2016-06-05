@@ -23,3 +23,4 @@ Included :
 
 ![alt text](images/ss-mobile.png "Mobile Preview 1")
 
+If you are using this theme. Please update the wiki with your url.
