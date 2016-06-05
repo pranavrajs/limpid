@@ -1,0 +1,121 @@
+.body {
+    font-family: 'Arvo', serif;
+    -webkit-font-smoothing: antialiased;
+    .content-container {
+        margin-top: 80px;
+    }
+    h3 {
+        a {
+            color: $background-color !important;
+        }
+    }
+    .btn-primary {
+        background: $background-color;
+        border: 1px solid $text-color;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .btn-primary:hover,
+    .btn-primary:active,
+    .btn-primary:focus {
+        background: $text-color !important;
+        border: 1px solid $background-color !important;
+        color: $background-color !important;
+    }
+    .navbar {
+        height: 60px;
+        padding-top: 4px;
+        background: $background-color;
+        border-radius: 0;
+        border: 0px;
+        a {
+            color: $text-color;
+        }
+        li {
+            a {
+                color: $text-color !important;
+            }
+        }
+    }
+    p {
+        font-size: 14px;
+        font-family: 'Arvo', serif;
+        -webkit-font-smoothing: antialiased;
+    }
+    code.highlighter-rouge {
+        font-family: 'Arvo', serif;
+    }
+    img {
+        max-width: 100%;
+        padding: 10px;
+        border: 1px solid #eee;
+    }
+    pre.prettyprint {
+        font-size: 13px;
+        font-weight: bold;
+        font-family: 'Open Sans';
+        padding: 8px 12px;
+        border: 0;
+        border-radius: 4px;
+    }
+    .post {
+        .header {
+            text-align: center;
+        }
+    }
+    .pager {
+        a {
+            color: $background-color !important;
+        }
+    }
+    .post-meta {
+        .post-descr {
+            padding: 15px 5px;
+            .comments {
+                color: $background-color !important;
+            }
+        }
+    }
+    .footer {
+        p {
+            text-align: center;
+            padding: 10px;
+        }
+    }
+    .share {
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px;
+        div {
+            display: inline-flex;
+            padding: 5px;
+        }
+    }
+    .fa {
+        font-size: 21px;
+    }
+    .author-links {
+        text-align: center;
+        padding: 10px;
+        ul {
+            -webkit-margin-after: 0;
+            margin: 0;
+            -webkit-padding-start: 0;
+            -webkit-margin-before: 0;
+            display: inline-block;
+            -webkit-margin-start: 0;
+            li {
+                float: left;
+                padding: 30px 30px 0;
+                display: block;
+                a {
+                    color: $background-color !important;
+                }
+            }
+        }
+    }
+    .source-code {
+        text-align: center;
+        padding: 10px;
+    }
+}

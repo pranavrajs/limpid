@@ -1,0 +1,21 @@
+---
+layout: default
+index: true
+---
+<div class="col-sm-8 col-sm-offset-2">
+    {% for post in site.posts %}
+    <div class="post-meta">
+        <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+        <img src="{{post.featured_image}}">
+        <div class="post-descr">
+            <p>
+                {{ post.date | date: "%b %-d, %Y" }} | {% if site.disqus_short_name and page.comments != false and site.disqus_show_comment_count == true %}<a class="comments" href="{% if page.index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread">Comments</a> {% endif %}
+            </p>
+            {% if post.content contains '<!-- more -->' %}
+            <p>{{ post.content | split:'<!-- more -->' | first }}
+                <a href="{{ post.url }}" class="btn btn-primary">Read More</a>
+            </p>
+        </div>
+    </div>
+    {% else %} {{ post.content }} {% endif %} {% endfor %}
+</div>

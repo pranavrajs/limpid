@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class="col-sm-8 col-sm-offset-2 post">
+    <div class="header">
+        <h2>{{ page.title }}</h2>
+        <p>{{ page.date | date: "%b %-d, %Y" }}</p>
+        <img src="{{page.featured_image}}">
+    </div>
+    <div class="col-sm-12">
+        <div id="google_translate_element"></div>
+        <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <br>
+        <article>
+            {{ content }}
+        </article>
+        {% include author_block.html %}
+    </div>
+</div>
